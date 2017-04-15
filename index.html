@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FCAC & Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>FCAC & CDIC Quiz</h1>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+
+      <form id="gform" name="quiz" method="POST" action="https://script.google.com/macros/s/AKfycbye1El3dwRZYnlt81sGqmUyQ-KqtKYDi0Uund36UwdS1_hzwI4/exec">
+        <div class="form-group">
+          <label for="login">Login ID</label>
+          <input type="text" name="login" id="login-input" placeholder="please enter login">
+        </div>
+        <div class="form-group">
+          <label for ="q1"><b>1.</b> What does CDIC stand for?</label><br/>
+          <p class="no-answer" id="cat1-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q1" value="a" id="q1a"/><label for="q1a">One</label></li>
+            <li><input type="radio" name ="q1" value="b" id="q1b"/><label for="q1b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q1" value="c" id="q1c"/><label for="q1c">Three</label></li>
+            <li><input type="radio" name ="q1" value="d" id="q1d"/><label for="q1d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q2"><b>2.</b> What does CDIC insure you in case of?</label><br/>
+          <p class="no-answer" id="cat2-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q2" value="a" id="q2a"/><label for="q2a">One</label></li>
+            <li><input type="radio" name ="q2" value="b" id="q2b"/><label for="q2b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q2" value="c" id="q2c"/><label for="q2c">Three</label></li>
+            <li><input type="radio" name ="q2" value="d" id="q2d"/><label for="q2d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q3"><b>3.</b> Where can you find info to provide to a customer regarding CDIC?</label><br/>
+          <p class="no-answer" id="cat3-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q3" value="a" id="q3a"/><label for="q3a">One</label></li>
+            <li><input type="radio" name ="q3" value="b" id="q3b"/><label for="q3b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q3" value="c" id="q3c"/><label for="q3c">Three</label></li>
+            <li><input type="radio" name ="q3" value="d" id="q3d"/><label for="q3d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q4"><b>4.</b> What is the CDIC limit?</label><br/>
+          <p class="no-answer" id="cat4-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q4" value="a" id="q4a"/><label for="q4a">One</label></li>
+            <li><input type="radio" name ="q4" value="b" id="q4b"/><label for="q4b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q4" value="c" id="q4c"/><label for="q4c">Three</label></li>
+            <li><input type="radio" name ="q4" value="d" id="q4d"/><label for="q4d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q5"><b>5.</b> How many legal entities are within TDBFG?</label><br/>
+          <p class="no-answer" id="cat5-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q5" value="a" id="q5a"/><label for="q5a">One</label></li>
+            <li><input type="radio" name ="q5" value="b" id="q5b"/><label for="q5b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q5" value="c" id="q5c"/><label for="q5c">Three</label></li>
+            <li><input type="radio" name ="q5" value="d" id="q5d"/><label for="q5d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q6"><b>6.</b> What types of products are protected by CDIC?</label><br/>
+          <p class="no-answer" id="cat6-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q6" value="a" id="q6a"/><label for="q6a">One</label></li>
+            <li><input type="radio" name ="q6" value="b" id="q6b"/><label for="q6b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q6" value="c" id="q6c"/><label for="q6c">Three</label></li>
+            <li><input type="radio" name ="q6" value="d" id="q6d"/><label for="q6d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q7"><b>7.</b> In order to be covered by CDIC, Term Deposits & GIC's must not have a term longer than?</label><br/>
+          <p class="no-answer" id="cat7-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q7" value="a" id="q7a"/><label for="q7a">One</label></li>
+            <li><input type="radio" name ="q7" value="b" id="q7b"/><label for="q7b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q7" value="c" id="q7c"/><label for="q7c">Three</label></li>
+            <li><input type="radio" name ="q7" value="d" id="q7d"/><label for="q7d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q8"><b>8.</b> Are US deposits and Mutual Funds covered by CDIC?</label><br/>
+          <p class="no-answer" id="cat8-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q8" value="a" id="q8a"/><label for="q8a">One</label></li>
+            <li><input type="radio" name ="q8" value="b" id="q8b"/><label for="q8b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q8" value="c" id="q8c"/><label for="q8c">Three</label></li>
+            <li><input type="radio" name ="q8" value="d" id="q8d"/><label for="q8d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q9"><b>9.</b> Up to what limit can we cash Federal Government cheques for Non-customers?</label><br/>
+          <p class="no-answer" id="cat9-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q9" value="a" id="q9a"/><label for="q9a">One</label></li>
+            <li><input type="radio" name ="q9" value="b" id="q9b"/><label for="q9b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q9" value="c" id="q9c"/><label for="q9c">Three</label></li>
+            <li><input type="radio" name ="q9" value="d" id="q9d"/><label for="q9d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q10"><b>10.</b> Can we cash a Federal Gov't cheque for a non-customer with only a DRL or Passport as ID?</label><br/>
+          <p class="no-answer" id="cat10-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q10" value="a" id="q10a"/><label for="q10a">One</label></li>
+            <li><input type="radio" name ="q10" value="b" id="q10b"/><label for="q10b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q10" value="c" id="q10c"/><label for="q10c">Three</label></li>
+            <li><input type="radio" name ="q10" value="d" id="q10d"/><label for="q10d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q11"><b>11.</b> How many pieces of ID are required to cash a Federal Gov't cheque for a non-customer if they do not have any ID listed on the ABBS list that contain a picture & signature?</label><br/>
+          <p class="no-answer" id="cat11-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q11" value="a" id="q11a"/><label for="q11a">One</label></li>
+            <li><input type="radio" name ="q11" value="b" id="q11b"/><label for="q11b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q11" value="c" id="q11c"/><label for="q11c">Three</label></li>
+            <li><input type="radio" name ="q11" value="d" id="q11d"/><label for="q11d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q12"><b>12.</b> What are we required to hand out if we refuse to cash a Federal Gov't cheque?</label><br/>
+          <p class="no-answer" id="cat12-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q12" value="a" id="q12a"/><label for="q12a">One</label></li>
+            <li><input type="radio" name ="q12" value="b" id="q12b"/><label for="q12b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q12" value="c" id="q12c"/><label for="q12c">Three</label></li>
+            <li><input type="radio" name ="q12" value="d" id="q12d"/><label for="q12d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q13"><b>13.</b> Give 3 reasons that you would refuse to cash a Federal Government cheque?</label><br/>
+          <p class="no-answer" id="cat13-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q13" value="a" id="q13a"/><label for="q13a">One</label></li>
+            <li><input type="radio" name ="q13" value="b" id="q13b"/><label for="q13b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q13" value="c" id="q13c"/><label for="q13c">Three</label></li>
+            <li><input type="radio" name ="q13" value="d" id="q13d"/><label for="q13d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q14"><b>14.</b> If a customer has a question about our Hold Funds Policy, what can you provide them?</label><br/>
+          <p class="no-answer" id="cat14-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q14" value="a" id="q14a"/><label for="q14a">One</label></li>
+            <li><input type="radio" name ="q14" value="b" id="q14b"/><label for="q14b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q14" value="c" id="q14c"/><label for="q14c">Three</label></li>
+            <li><input type="radio" name ="q14" value="d" id="q14d"/><label for="q14d">Four</label></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for ="q15"><b>15.</b> What is the hold period for a CAD chq drawn on a CAD OFI where the account has been opened less than 90 days?</label><br/>
+          <p class="no-answer" id="cat15-error"><b>X</b> Please choose an answer</p>
+          <ul>
+            <li><input type="radio" name ="q15" value="a" id="q15a"/><label for="q15a">One</label></li>
+            <li><input type="radio" name ="q15" value="b" id="q15b"/><label for="q15b">Two</label></li>
+          </ul>
+          <ul>
+            <li><input type="radio" name ="q15" value="c" id="q15c"/><label for="q15c">Three</label></li>
+            <li><input type="radio" name ="q15" value="d" id="q15d"/><label for="q15d">Four</label></li>
+          </ul>
+        </div>
+
+        <button>Send</button>
+        <a class="btn" id="submit-button">Submit</a><a href="" class="btn" id="reset-button">Reset</a>
+
+        <div class="results">
+          <p>You scored <span id="score"></span> out of 15</p>
+          <a class="btn" id="review">Review</a><a href="" class="btn" id="reset-button">Try Again</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+
+    </div>
+  </div>
+
+  <!-- test -->
+  <script data-cfasync="false" type="text/javascript" src="./form-submission-handler.js"></script>
+
+</body>
+</html>
