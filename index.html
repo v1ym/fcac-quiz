@@ -17,7 +17,7 @@
   <div class="main">
     <div class="container">
 
-      <form role="form" name="quiz" action="https://script.google.com/macros/s/AKfycbye1El3dwRZYnlt81sGqmUyQ-KqtKYDi0Uund36UwdS1_hzwI4/exec" method="post">
+      <form role="form" name="quiz" action="https://script.google.com/macros/s/AKfycbye1El3dwRZYnlt81sGqmUyQ-KqtKYDi0Uund36UwdS1_hzwI4/exec" method="post" id="quiz">
         <div class="form-group">
           <label for="login">Login ID</label>
           <input type="text" name="login" id="login-input" placeholder="please enter login">
@@ -222,11 +222,29 @@
     </div>
   </div>
 
+  <script>
+      /* attach a submit handler to the form */
+      $("#quiz").submit(function(event) {
 
+          /* stop form from submitting normally */
+          event.preventDefault();
 
+          /* get some values from elements on the page: */
+          var $form = $(this),
+              term = $form.find('input[name="s"]').val(),
+              url = $form.attr('action');
 
+          /* Send the data using post */
+          var posting = $.post(url, {
+              s: term
+          });
 
-
+          /* Put the results in a div */
+          posting.done(function(data) {
+              alert("Success");
+          });
+      });
+  </script>
 
 <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
