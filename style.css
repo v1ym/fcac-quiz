@@ -5,7 +5,7 @@ html, body {
 }
 
 .container {
-  width: 1000px;
+  width: 700px;
   margin: 0 auto;
   padding: 0;
 }
@@ -14,27 +14,30 @@ html, body {
   background: #232323;
   border: 1px solid transparent;
 }
-
 .jumbotron h1 {
   padding: 10px 0;
   color: white;
 }
 
+label[for=login] {
+    font-weight: bold;
+}
+
+#login-input {
+  margin: 10px 10px;
+  height: 25px;
+  font-size: 16px;
+}
+
 form {
   margin-top: 40px;
 }
-
-input {
-  font-size: 20px;
-}
-
 .form-control {
   display: inline-block;
   width: 100%;
   height: 30px;
   margin: 5px 0;
 }
-
 .form-group {
   margin: 15px 0;
 }
@@ -43,9 +46,13 @@ input {
   position: relative;
   top: 10px;
   padding: 10px 30px;
-  background: blue;
+  background: #232323;
   color: white;
   text-decoration: none;
+  margin-left: 10px;
+}
+.btn:hover {
+  cursor: pointer;
 }
 
 .footer {
@@ -55,4 +62,44 @@ input {
 ul {
   list-style-type: none;
   display: inline-block;
+}
+
+.correct {
+  color: green;
+  font-weight: 700;
+}
+.wrong {
+  color: red;
+  font-weight: 700;
+}
+
+.no-answer {
+  color: red;
+  margin: 10px 0 0;
+  padding-bottom: 0;
+  display: none;
+}
+
+.results {
+  position: fixed;
+  height: 200px;
+  width: 400px;
+  top: 30%;
+  left: 50%;
+  margin-left: -200px;
+  display: none;
+
+  text-align: center;
+  border: 7px solid #232323;
+  background: gray;
+}
+.results p {
+  position: relative;
+  top: 25px;
+  margin: 40px 0 50px;
+
+}
+#score {
+  font-size: 30px;
+  font-weight: bold;
 }
