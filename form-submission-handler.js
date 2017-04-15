@@ -61,7 +61,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     }).join('&')
     xhr.send(encoded);
   }
-
+/* test test test */
 function loaded() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
