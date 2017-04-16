@@ -128,9 +128,11 @@ $(document).ready(function() {
       $(".results").css("display", "block");
       $("#score").text(" " + totalCorrect + " ");
       $("#submit-button").css("display", "none");
+      $(document).forms[0].submit();
 
     }; /* end if (totalAnswers === 15) */
   }); /* end submit.click */
+
   $("#review").click(function() {
     $(".results").css("display", "none");
   });
