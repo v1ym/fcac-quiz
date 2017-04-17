@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("#submit-button").click(function() {
 
     var cat = new Array();
+    cat[0] = document.forms["quiz"]["login"].value;
     cat[1] = document.forms["quiz"]["q1"].value;
     cat[2] = document.forms["quiz"]["q2"].value;
     cat[3] = document.forms["quiz"]["q3"].value;
@@ -22,13 +23,14 @@ $(document).ready(function() {
     for (var i in cat) {
       if (cat[i] === "") {
         $("#cat" + i + "-error").css("display", "block");
+        window.scrollTo(0, 0);
       } else if (cat[i] !== "") {
         $("#cat" + i + "-error").css("display", "none");
         totalAnswers += 1;
       };
     ;}
 
-    if (totalAnswers === 15) {
+    if (totalAnswers === 16) {
       var totalCorrect = 0;
       if (cat[1] === "a") {
         totalCorrect+=1;
@@ -128,7 +130,7 @@ $(document).ready(function() {
       $(".results").css("display", "block");
       $("#score").text(" " + totalCorrect + " ");
       $("#submit-button").css("display", "none");
-      $(document).forms[0].submit();
+      /* document.forms[0].submit();  */
 
     }; /* end if (totalAnswers === 15) */
   }); /* end submit.click */
