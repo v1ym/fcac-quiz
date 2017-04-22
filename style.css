@@ -2,16 +2,19 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: helvetica, sans-serif;
+  background: #ccdfcb;
+  color: #414141;
 }
 
 .container {
-  width: 700px;
+  width: 900px;
   margin: 0 auto;
   padding: 0;
+
 }
 
 .jumbotron {
-  background: #004423;
+  background: #015249;
   border: 1px solid transparent;
 }
 .jumbotron h1 {
@@ -21,6 +24,10 @@ html, body {
 
 label[for=login] {
     font-weight: bold;
+}
+
+.form-group > label {
+  font-size: 20px;
 }
 
 #login-input {
@@ -46,7 +53,7 @@ form {
   position: relative;
   top: 10px;
   padding: 10px 30px;
-  background: #232323;
+  background: #414141;
   color: white;
   text-decoration: none;
   margin-left: 10px;
@@ -66,6 +73,19 @@ button {
 ul {
   list-style-type: none;
   display: inline-block;
+}
+
+li {
+  margin: 5px;
+  font-size: 18px;
+}
+
+li input, li label {
+  cursor: pointer;
+}
+
+input[type=radio] {
+
 }
 
 .correct {
@@ -102,6 +122,7 @@ ul {
   position: relative;
   top: 25px;
   margin: 40px 0 50px;
+  color: #414141;
 
 }
 #score {

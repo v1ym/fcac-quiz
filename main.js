@@ -1,7 +1,11 @@
 $(document).ready(function() {
+
+
+
   $("#submit-button").click(function() {
 
     var cat = new Array();
+
     cat[0] = document.forms["quiz"]["login"].value;
     cat[1] = document.forms["quiz"]["q1"].value;
     cat[2] = document.forms["quiz"]["q2"].value;
@@ -21,10 +25,10 @@ $(document).ready(function() {
 
     var totalAnswers = 0;
     for (var i in cat) {
-      if (cat[i] === "") {
+      if (cat[i] === "" || cat[i] === undefined) {
         $("#cat" + i + "-error").css("display", "block");
         window.scrollTo(0, 0);
-      } else if (cat[i] !== "") {
+      } else if (cat[i] !== "" || cat[i] !== undefined) {
         $("#cat" + i + "-error").css("display", "none");
         totalAnswers += 1;
       };
@@ -32,7 +36,7 @@ $(document).ready(function() {
 
     if (totalAnswers === 16) {
       var totalCorrect = 0;
-      if (cat[1] === "a") {
+      if (cat[1] === "c") {
         totalCorrect+=1;
       } else {
         $("label[for=q1" + cat[1] + "]").addClass("wrong");
@@ -42,42 +46,42 @@ $(document).ready(function() {
       } else {
         $("label[for=q2" + cat[2] + "]").addClass("wrong");
       }
-      if (cat[3] === "a") {
+      if (cat[3] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q3" + cat[3] + "]").addClass("wrong");
       }
-      if (cat[4] === "a") {
+      if (cat[4] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q4" + cat[4] + "]").addClass("wrong");
       }
-      if (cat[5] === "a") {
+      if (cat[5] === "d") {
         totalCorrect+=1;
       } else {
         $("label[for=q5" + cat[5] + "]").addClass("wrong");
       }
-      if (cat[6] === "a") {
+      if (cat[6] === "c") {
         totalCorrect+=1;
       } else {
         $("label[for=q6" + cat[6] + "]").addClass("wrong");
       }
-      if (cat[7] === "a") {
+      if (cat[7] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q7" + cat[7] + "]").addClass("wrong");
       }
-      if (cat[8] === "a") {
+      if (cat[8] === "d") {
         totalCorrect+=1;
       } else {
         $("label[for=q8" + cat[8] + "]").addClass("wrong");
       }
-      if (cat[9] === "a") {
+      if (cat[9] === "d") {
         totalCorrect+=1;
       } else {
         $("label[for=q9" + cat[9] + "]").addClass("wrong");
       }
-      if (cat[10] === "a") {
+      if (cat[10] === "c") {
         totalCorrect+=1;
       } else {
         $("label[for=q10" + cat[10] + "]").addClass("wrong");
@@ -87,7 +91,7 @@ $(document).ready(function() {
       } else {
         $("label[for=q11" + cat[11] + "]").addClass("wrong");
       }
-      if (cat[12] === "a") {
+      if (cat[12] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q12" + cat[12] + "]").addClass("wrong");
@@ -97,32 +101,32 @@ $(document).ready(function() {
       } else {
         $("label[for=q13" + cat[13] + "]").addClass("wrong");
       }
-      if (cat[14] === "a") {
+      if (cat[14] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q14" + cat[14] + "]").addClass("wrong");
       }
-      if (cat[15] === "a") {
+      if (cat[15] === "b") {
         totalCorrect+=1;
       } else {
         $("label[for=q15" + cat[15] + "]").addClass("wrong");
       }
 
-      $("label[for='q1a']").addClass("correct");
+      $("label[for='q1c']").addClass("correct");
       $("label[for='q2a']").addClass("correct");
-      $("label[for='q3a']").addClass("correct");
-      $("label[for='q4a']").addClass("correct");
-      $("label[for='q5a']").addClass("correct");
-      $("label[for='q6a']").addClass("correct");
-      $("label[for='q7a']").addClass("correct");
-      $("label[for='q8a']").addClass("correct");
-      $("label[for='q9a']").addClass("correct");
-      $("label[for='q10a']").addClass("correct");
+      $("label[for='q3b']").addClass("correct");
+      $("label[for='q4b']").addClass("correct");
+      $("label[for='q5d']").addClass("correct");
+      $("label[for='q6c']").addClass("correct");
+      $("label[for='q7b']").addClass("correct");
+      $("label[for='q8d']").addClass("correct");
+      $("label[for='q9d']").addClass("correct");
+      $("label[for='q10c']").addClass("correct");
       $("label[for='q11a']").addClass("correct");
-      $("label[for='q12a']").addClass("correct");
+      $("label[for='q12b']").addClass("correct");
       $("label[for='q13a']").addClass("correct");
-      $("label[for='q14a']").addClass("correct");
-      $("label[for='q15a']").addClass("correct");
+      $("label[for='q14b']").addClass("correct");
+      $("label[for='q15b']").addClass("correct");
 
       console.log(cat);
       console.log(totalAnswers);
